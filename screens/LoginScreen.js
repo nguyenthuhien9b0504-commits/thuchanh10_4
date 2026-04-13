@@ -33,8 +33,8 @@ export default function LoginScreen({ navigation }) {
         <Text style={styles.forgot}>Forgot Password?</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.navigate('Checkout')}>
-        <Text style={styles.loginBtnText}>Log In</Text>
+      <TouchableOpacity style={styles.loginBtn} onPress={() => navigation.replace('MainTab')}>
+      <Text style={styles.loginBtnText}>Log In</Text>
       </TouchableOpacity>
 
       <View style={styles.signupRow}>

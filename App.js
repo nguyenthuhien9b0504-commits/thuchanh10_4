@@ -10,13 +10,10 @@ import VerificationScreen from './screens/VerificationScreen';
 import SelectLocationScreen from './screens/SelectLocationScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import MainTabScreen from './screens/MainTabScreen';
 import CheckoutScreen from './screens/CheckoutScreen';
 import OrderAcceptedScreen from './screens/OrderAcceptedScreen';
-import OrderFailedScreen from './screens/OrderFailedScreen';
-import AccountScreen from './screens/AccountScreen';
-
 const Stack = createStackNavigator();
-
 export default function App() {
   return (
     <NavigationContainer>
@@ -29,10 +26,10 @@ export default function App() {
         <Stack.Screen name="SelectLocation" component={SelectLocationScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
+        <Stack.Screen name="MainTab" component={MainTabScreen} />
         <Stack.Screen name="Checkout" component={CheckoutScreen} />
         <Stack.Screen name="OrderAccepted" component={OrderAcceptedScreen} />
-        <Stack.Screen name="OrderFailed" component={OrderFailedScreen} />
-        <Stack.Screen name="Account" component={AccountScreen} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
